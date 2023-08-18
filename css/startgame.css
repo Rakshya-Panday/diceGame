@@ -1,0 +1,29 @@
+
+img{
+    width: 100%;
+    height: 500px;
+    align-items: center;
+    margin-top: 100px;
+   
+}
+.startgame{
+    width: 75%;
+    display: flex;
+    align-items: center;
+     margin: auto;
+}
+.second{
+    margin: auto;
+}
+
+.second h1{
+    justify-content :center;
+    font-size: 80px;
+}
+.second button{
+    background-color: black;
+    color: white;
+    font-size: 25px;
+    width: 200px;
+    height: 50px;
+}

@@ -1,0 +1,41 @@
+.head{
+    display: flex;
+    justify-content: space-between;
+    
+   
+}
+.second{
+    display: flex;
+    gap: 8px;
+}
+.second p{
+align-items: center;
+
+ font-size: 20px;
+ font-weight: bold;
+}
+ box{
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+   display: grid;
+   place-items: center;
+    gap: 5px;
+   
+   
+}
+
+.heading{
+    margin-left: 30px;
+   
+}
+.heading p{
+    font-size: 40px;
+    margin: 0px;
+
+}
+.heading h1{
+    font-size: 50px;
+   margin: auto;
+   text-align: center;
+}
