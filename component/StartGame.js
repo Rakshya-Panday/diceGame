@@ -4,7 +4,7 @@ const StartGame = ({togle}) => {
         <>
             <div className="startgame">
                 <div className="first">
-                    <img src="dice.jpg" alt="dice" />
+                    <img src="dice.png" alt="dice" />
                 </div>
                 <div className="second">
               <h1>Dice Game</h1>

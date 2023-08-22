@@ -1,11 +1,13 @@
 import { useState } from 'react';
 import '../css/playnow.css';
+import Rules from './Rules';
 const PlayNow = ()=>{
     const arr = [1,2,3,4,5,6];
     const[selectnum,setselectnum] = useState();
     const[currentDice,setCurrentDice] = useState(1);
     const[score,setScore] = useState(0);
-    const[error,setError] = useState("")
+    const[error,setError] = useState("");
+    const[visible,setVisible] = useState(false);
     const generateRandomNumber = (min,max) => {
         console.log( Math.floor( Math.random() * (max - min) + min));
         return Math.floor( Math.random() * (max - min) + min);
@@ -31,6 +33,14 @@ const PlayNow = ()=>{
         }
        setselectnum(undefined);
       
+    }
+
+    const resetDice =()=>{
+        setScore("0");
+    }
+
+    const showRules = ()=>{
+        setVisible()
     }
 
 
@@ -59,8 +69,13 @@ const PlayNow = ()=>{
            
             <img src={`dices/dice_${currentDice}.png `} alt='dice1'/>
             <p>Click on dice to roll</p>
-         <button>Reset Score</button>
-         <button>Show Rules</button> 
+         <button onClick={resetDice}>Reset Score</button>
+         <button  onClick={()=>setVisible((prev)=>!prev)}>
+            {
+                visible ? "Hide":"Show"
+            }
+            Show Rules</button> 
+          { visible &&  <Rules/>}
          </div>
          
         </>

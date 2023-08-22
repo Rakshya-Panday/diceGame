@@ -6,7 +6,7 @@ import StartGame from "./component/StartGame";
 import PlayNow from "./component/PlayNow";
 
 function App() {
-  const[start,setStart]  = useState(true);
+  const[start,setStart]  = useState(false);
   const play = ()=>{
     setStart((prev)=>!prev)
   }
